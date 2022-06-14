@@ -1,0 +1,110 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dcyan: hsl(179, 100%, 13%);
+  --c-white: hsla(0, 0%, 100%, 0.75);
+  --light-grey: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 375px) {
+  body {
+    margin: 0;
+    padding-top: 100px;
+  }
+
+  section {
+    width: 60%;
+    margin: auto;
+    display: flex;
+  }
+
+  div {
+    padding: 2em;
+  }
+
+  .orange {
+    background-color: var(--orange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .blue {
+    background-color: var(--cyan);
+  }
+
+  .green {
+    background-color: var(--dcyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  img {
+    width: 20%;
+  }
+
+  h2 {
+    color: var(--light-grey);
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  p {
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--c-white);
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .orange button {
+    padding: 1em;
+    width: 60%;
+    margin-top: 40px;
+    border-radius: 20px;
+    color: var(--orange);
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--light-grey);
+  }
+
+  .blue button {
+    padding: 1em;
+    width: 60%;
+    margin-top: 40px;
+    border-radius: 20px;
+    color: var(--cyan);
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--light-grey);
+  }
+
+  .green button {
+    padding: 1em;
+    width: 60%;
+    margin-top: 40px;
+    border-radius: 20px;
+    color: var(--dcyan);
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--light-grey);
+  }
+
+  button:hover {
+    border: 2px solid var(--light-grey);
+    color: var(--light-grey);
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  footer {
+    width: 100%;
+    padding: 1em;
+    background: rgb(212, 212, 212);
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+  }
+  footer a {
+    color: black;
+  }
+}
